@@ -22,17 +22,51 @@
 
 ---
 
-## 2) تجهيز الصور (مرة واحدة فقط)
+## 2) الصور الجاهزة في المستودع — مجلد `صور_الدعاية/`
 
-جهّز هذه الصور بجودة عالية وإضاءة جيدة، صورة واحدة لكل توليدة:
+استخرجت صور المنتج الحقيقية من الكتالوج ونظمتها في مجلد `صور_الدعاية/` داخل هذا المستودع، جاهزة للتحميل والرفع مباشرة على منصات التوليد:
 
-1. **صورة المرسلة** — قريبة وواضحة، يظهر فيها الليد ومنفذ RJ45.
-2. **صورة جهاز البراد** (الفيشة) أو **جهاز المكيف/السخان**.
-3. **صورة الألواح الشمسية** على السطح وقت الظهر أو الغروب.
-4. **سكرين شوت من لوحة التحكم** (devices.barqmax.net أو التطبيق) تظهر فيها نسبة البطارية والمخطط البياني.
-5. (اختياري) صورة الإنفرتر موصول بالمرسلة بكابل الشبكة.
+| الملف | المحتوى | تصلح للبرومبتات |
+|-------|---------|------------------|
+| `المرسلة_3_زوايا.png` | المرسلة السوداء: الزر الأبيض الجانبي، الواجهة (DC 12V IN / RS-232 / ليد أحمر)، منفذ RJ45 | A1, A2, B2, B5 والمشاهد التعليمية |
+| `جهاز_البراد_3_زوايا.jpeg` | جهاز البراد الأسود بالفيشة والزر الذهبي وشعار BARQ | مشاهد البراد |
+| `جهاز_المكيف_3_زوايا.png` | جهاز المكيف أبيض/أسود بترمينالات (خرج/نتر/دخل) والزر الأحمر | مشاهد المكيف |
+| `جهاز_السخان_مجموعة.png` | جهاز السخان بالواجهة الذهبية والشاشة الرقمية (فولت/أمبير) | A4 ومشاهد السخان |
+| `سكرين_لوحة_التحكم.jpg` | الشاشة الرئيسية: ساعات السخان/البراد/الكهرباء، مخطط 24 ساعة، حالة الأجهزة | A3, B4 |
+| `سكرين_انشاء_حساب.jpg` | شاشة إنشاء الحساب (48V/24V/12V) | مشهد إنشاء الحساب |
+| `سكرين_ضبط_السخان.jpg` | خيارات التشغيل حسب النسبة والتشغيل القسري | مشاهد ضبط السخان |
+
+**صور ما زلت تحتاج تصويرها بنفسك** (غير موجودة في الكتالوج):
+1. صورة الألواح الشمسية على السطح وقت الظهر أو الغروب.
+2. صورة الإنفرتر الحقيقي موصولاً بالمرسلة بكابل الشبكة (مهمة جداً للمشاهد التعليمية).
 
 > نصيحة: الصورة النظيفة بخلفية بسيطة تعطي نتيجة أفضل بكثير من الصورة المزدحمة.
+
+---
+
+## 2.5) أوصاف الأجهزة الحقيقية بالإنجليزي — الصقها مع أي برومبت
+
+عند رفع صورة الجهاز مع البرومبت، أضف السطر المناسب في نهاية البرومبت حتى لا يغيّر المولّد شكل الجهاز:
+
+**المرسلة:**
+```
+Use the attached image of the black BARQ transmitter device exactly as shown — a small matte-black rectangular box with a blue-and-silver BARQ lightning logo, a red LED, labels "DC 12V IN" and "RS-232", a round white side button, an RJ45 port and DC jack on its side. Do not alter its shape, logo, ports, or color.
+```
+
+**جهاز البراد:**
+```
+Use the attached image of the black BARQ fridge controller exactly as shown — a slim black plug-through device with a European wall plug on its back, a power outlet on its side, silver corner screws, a blue BARQ lightning logo and a round golden button. Do not alter its shape, logo, or color.
+```
+
+**جهاز المكيف:**
+```
+Use the attached image of the BARQ air-conditioner controller exactly as shown — a rectangular wall-mounted box with a white front panel reading "BARQ" and Arabic text, black side casing, terminal connectors on top labeled in Arabic (input / neutral / output), and a small red button at the bottom. Do not alter its shape, labels, or colors.
+```
+
+**جهاز السخان:**
+```
+Use the attached image of the BARQ water heater controller exactly as shown — a wall-mounted box with a shiny gold front panel, BARQ lightning logo, a small digital display showing voltage and amperage readings, white terminal connectors on top and a silver heatsink on its back. Do not alter its shape, logo, display, or colors.
+```
 
 ---
 
@@ -43,7 +77,7 @@
 ### برومبت A1 — الإعلان الرئيسي السريع (الصورة: المرسلة)
 
 ```
-Fast-paced, energetic commercial for a smart solar power controller. Quick dynamic cuts: sunlight flashing across solar panels, close-up on a sleek white smart device with a blinking LED light, a hand tapping a smartphone screen showing a live dashboard with battery percentage climbing, a refrigerator light switching on instantly, warm home lighting turning on during a blackout. Snappy camera movement — quick zooms, whip pans, rhythmic cuts synced to an upbeat beat. Bright vibrant color grading, golden-hour sunlight, clean modern tech aesthetic, ultra-realistic, 4K, commercial advertisement style, no on-screen text.
+Fast-paced, energetic commercial for a smart solar power controller. Quick dynamic cuts: sunlight flashing across solar panels, close-up on a sleek matte-black smart device with a glowing blue lightning logo and a blinking red LED light, a hand tapping a smartphone screen showing a live dashboard with battery percentage climbing, a refrigerator light switching on instantly, warm home lighting turning on during a blackout. Snappy camera movement — quick zooms, whip pans, rhythmic cuts synced to an upbeat beat. Bright vibrant color grading, golden-hour sunlight, clean modern tech aesthetic, ultra-realistic, 4K, commercial advertisement style, no on-screen text.
 ```
 
 نسخة قصيرة:
@@ -55,13 +89,13 @@ Energetic solar-tech commercial, quick dynamic cuts between solar panels, a glow
 ### برومبت A2 — كيف يعمل النظام (الصورة: المرسلة موصولة بالإنفرتر)
 
 ```
-Clean modern product commercial showing a smart home energy system coming to life. The camera slowly orbits a small white smart device connected to a solar inverter with a network cable, its LED blinking rhythmically. Glowing data particles flow wirelessly from the device through the air toward a refrigerator and a water heater across the room, then up to a smartphone. Soft depth of field, cool blue and warm gold lighting, futuristic but realistic smart-home atmosphere, cinematic lighting, 4K, commercial style, no on-screen text.
+Clean modern product commercial showing a smart home energy system coming to life. The camera slowly orbits a small matte-black smart device with a blue lightning logo, connected to a solar inverter with a network cable, its LED blinking rhythmically. Glowing data particles flow wirelessly from the device through the air toward a refrigerator and a water heater across the room, then up to a smartphone. Soft depth of field, cool blue and warm gold lighting, futuristic but realistic smart-home atmosphere, cinematic lighting, 4K, commercial style, no on-screen text.
 ```
 
 نسخة قصيرة:
 
 ```
-Cinematic smart-home commercial: a white smart controller connected to a solar inverter blinks, glowing wireless signals flow to a fridge, water heater and a smartphone. Cool blue and gold lighting, realistic, 4K, no text.
+Cinematic smart-home commercial: a black smart controller with a blue lightning logo connected to a solar inverter blinks, glowing wireless signals flow to a fridge, water heater and a smartphone. Cool blue and gold lighting, realistic, 4K, no text.
 ```
 
 ### برومبت A3 — لوحة التحكم والمراقبة عن بعد (الصورة: سكرين شوت الداشبورد)
@@ -109,13 +143,13 @@ Cinematic story ad: dark home in a blackout, worried man, fridge with spoiled fo
 ### برومبت B2 — البطارية تموت ببطء (الخوف من الخسارة)
 
 ```
-Dramatic close-up commercial: a home battery indicator draining from 80% down to 10%, red warning glow, lights in the house dimming one by one, a refrigerator light fading out. Tense atmosphere, dark moody lighting with red accents. Then a small white smart device blinks to life, the drain stops, the percentage stabilizes and slowly climbs, lights return warm and steady. Cinematic contrast between cold red danger and warm safe light, ultra-realistic, 4K, ad style, no on-screen text.
+Dramatic close-up commercial: a home battery indicator draining from 80% down to 10%, red warning glow, lights in the house dimming one by one, a refrigerator light fading out. Tense atmosphere, dark moody lighting with red accents. Then a small black smart device with a blue lightning logo blinks to life, the drain stops, the percentage stabilizes and slowly climbs, lights return warm and steady. Cinematic contrast between cold red danger and warm safe light, ultra-realistic, 4K, ad style, no on-screen text.
 ```
 
 نسخة قصيرة:
 
 ```
-Dramatic ad: home battery draining fast with red warning glow and dimming lights — a white smart device blinks on, the drain stops, battery climbs, warm light returns. Cinematic, 4K, no text.
+Dramatic ad: home battery draining fast with red warning glow and dimming lights — a black smart device blinks on, the drain stops, battery climbs, warm light returns. Cinematic, 4K, no text.
 ```
 
 ### برومبت B3 — المال المهدور (فاتورة وطاقة ضائعة)
@@ -145,7 +179,7 @@ Lifestyle ad: a relaxed man in a cafe checks a solar dashboard on his phone — 
 ### برومبت B5 — قبل / بعد (المقارنة الصريحة)
 
 ```
-Split-screen style commercial comparing two homes at night during a city blackout. Left: dark windows, candles, a frustrated family, food spoiling. Right: warm glowing windows, refrigerator running, kids doing homework under bright light, a small white smart device blinking calmly near the inverter. Camera slowly pushes toward the bright home. High contrast cinematic grading, emotional storytelling, ultra-realistic, 4K, advertisement, no on-screen text.
+Split-screen style commercial comparing two homes at night during a city blackout. Left: dark windows, candles, a frustrated family, food spoiling. Right: warm glowing windows, refrigerator running, kids doing homework under bright light, a small black smart device with a blue lightning logo blinking calmly near the inverter. Camera slowly pushes toward the bright home. High contrast cinematic grading, emotional storytelling, ultra-realistic, 4K, advertisement, no on-screen text.
 ```
 
 نسخة قصيرة:
@@ -192,9 +226,18 @@ Split-screen ad: two homes in a blackout — one dark with candles and frustrati
 - «شمس مجانية فوق سطحك… وأنت عم تدفع مصاري؟!»
 - «مع برق: البراد شغال، البطارية محمية، والمصاري بجيبتك»
 
-**دعوة لاتخاذ إجراء (آخر الفيديو):**
-- «اطلب نظام برق اليوم — devices.barqmax.net»
-- «برق… وفّر طاقتك، طوّل عمر بطاريتك»
+**دعوة لاتخاذ إجراء (آخر الفيديو) — بدون ذكر أي سعر:**
+
+السياسة: لا يُذكر السعر في أي فيديو إطلاقاً. الهدف دفع العميل للاتصال برقم الشركة.
+
+- «للطلب والاستفسار، اتصل الآن: [رقم الشركة]»
+- «راسلنا واتساب على: [رقم الشركة] — والتركيب بسيط»
+- «برق… وفّر طاقتك، طوّل عمر بطاريتك. اتصل: [رقم الشركة]»
+- «الكمية محدودة — احجز جهازك الآن: [رقم الشركة]»
+
+> استبدل [رقم الشركة] برقم التواصل الرسمي عند المونتاج في CapCut، ويفضّل إبقاء الرقم ظاهراً في آخر 3 ثوانٍ بخط كبير مع أيقونة اتصال/واتساب.
+
+**ملاحظة التعليق الصوتي:** مولدات الفيديو (Veo وغيرها) لا تنطق العربية الفصحى بدقة موثوقة. ولّد المشاهد صامتة، وسجّل التعليق الصوتي منفصلاً — بصوتك أو بأداة تحويل نص لكلام تدعم العربية بجودة عالية (مثل ElevenLabs) — ثم ركّبه فوق الفيديو في CapCut.
 
 ---
 

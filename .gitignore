@@ -1,0 +1,5 @@
+build*/
+frames/
+clips/
+*.tgz
+package/

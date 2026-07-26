@@ -3,3 +3,10 @@ frames/
 clips/
 *.tgz
 package/
+glb_test/vframes/
+glb_test/vclips/
+glb_test/package/
+glb_test/*.tgz
+glb_test/grid_*.png
+glb_test/probe*.png
+glb_test/testshow.png

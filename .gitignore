@@ -10,3 +10,12 @@ glb_test/*.tgz
 glb_test/grid_*.png
 glb_test/probe*.png
 glb_test/testshow.png
+glb_test/fonts/
+glb_test/grain.png
+glb_test/glbdata.js
+glb_test/dbg.py
+glb_test/probe*.py
+glb_test/grid.py
+glb_test/testshow.py
+glb_test/vconcat.txt
+glb_test/vrun.log

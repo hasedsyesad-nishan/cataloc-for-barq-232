@@ -1,0 +1,93 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:CB;src:url(fonts/Cairo-Black.ttf);}
+@font-face{font-family:CBD;src:url(fonts/Cairo-Bold.ttf);}
+@font-face{font-family:CR;src:url(fonts/Cairo-Regular.ttf);}
+@font-face{font-family:CS;src:url(fonts/Cairo-SemiBold.ttf);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1920px;overflow:hidden;}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+ background:radial-gradient(120% 80% at 50% 34%,#2a2621 0%,#1b1712 44%,#0c0a08 100%);}
+#floor{position:absolute;left:0;right:0;bottom:0;height:620px;
+ background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.35) 60%,rgba(0,0,0,.7) 100%);}
+#shadow{position:absolute;left:50%;top:1230px;width:600px;height:130px;margin-left:-300px;
+ background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(0,0,0,.7),rgba(0,0,0,0) 70%);filter:blur(6px);z-index:3;}
+#c{position:absolute;left:0;top:0;display:block;z-index:5;}
+.grain{position:absolute;inset:0;background-image:url(grain.png);background-size:600px 340px;opacity:.06;mix-blend-mode:overlay;pointer-events:none;z-index:20;}
+.vig{position:absolute;inset:0;box-shadow:inset 0 0 360px 90px rgba(0,0,0,.6);pointer-events:none;z-index:19;}
+.rtl{direction:rtl;}
+#ttl{position:absolute;top:150px;right:70px;left:70px;text-align:center;z-index:15;}
+#brand{position:absolute;top:1580px;right:70px;left:70px;text-align:center;z-index:15;}
+.gold{color:#e6bd6f;}
+@keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes upS{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes chip{0%{opacity:0;transform:translateY(30px) scale(.9)}100%{opacity:1;transform:translateY(0) scale(1)}}
+</style>
+<script src="glbdata.js"></script>
+<script type="importmap">
+{ "imports": { "three": "./package/build/three.module.js", "three/addons/": "./package/examples/jsm/" }}
+</script>
+</head>
+<body>
+<div id="stage" class="rtl">
+  <div id="floor"></div>
+  <div id="shadow"></div>
+  <canvas id="c" width="1080" height="1920"></canvas>
+  <div id="ttl">
+    <div style="font-family:CR;color:#b8a98f;font-size:40px;letter-spacing:2px;opacity:0;animation:fade 1s ease .2s forwards;">قلبُ منظومتك الشمسية</div>
+    <div style="height:16px;"></div>
+    <div style="font-family:CB;font-size:104px;color:#fff;opacity:0;animation:up 1s cubic-bezier(.2,.7,.2,1) .7s forwards;">المُرسِلة</div>
+    <div style="height:14px;"></div>
+    <div style="font-family:CS;font-size:38px;color:#cdbfa4;opacity:0;animation:upS .9s ease 1.6s forwards;">العقلُ المُدبِّر… يقودُ كلَّ أجهزتك</div>
+  </div>
+  <div id="brand">
+    <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap;">
+      <div style="font-family:CS;font-size:34px;color:#e9dcc2;background:rgba(255,255,255,.06);border:1px solid rgba(230,189,111,.3);border-radius:40px;padding:14px 30px;opacity:0;animation:chip .7s ease 2.2s forwards;">لاسلكي ESP-NOW</div>
+      <div style="font-family:CS;font-size:34px;color:#e9dcc2;background:rgba(255,255,255,.06);border:1px solid rgba(230,189,111,.3);border-radius:40px;padding:14px 30px;opacity:0;animation:chip .7s ease 2.55s forwards;">بلا إنترنت</div>
+      <div style="font-family:CS;font-size:34px;color:#e9dcc2;background:rgba(255,255,255,.06);border:1px solid rgba(230,189,111,.3);border-radius:40px;padding:14px 30px;opacity:0;animation:chip .7s ease 2.9s forwards;">صناعة سورية</div>
+    </div>
+  </div>
+  <div class="vig"></div><div class="grain"></div>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+const W=1080,H=1920;
+const canvas=document.getElementById('c');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,preserveDrawingBuffer:true});
+renderer.setSize(W,H,false); renderer.setPixelRatio(1);
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.2;
+const scene=new THREE.Scene();
+const pmrem=new THREE.PMREMGenerator(renderer);
+scene.environment=pmrem.fromScene(new RoomEnvironment(),0.04).texture;
+const camera=new THREE.PerspectiveCamera(32,W/H,0.1,100);
+const key=new THREE.DirectionalLight(0xffffff,2.6); key.position.set(3,5,4); scene.add(key);
+const rim=new THREE.DirectionalLight(0xbfd8ff,1.7); rim.position.set(-4,2,-3); scene.add(rim);
+const fill=new THREE.DirectionalLight(0xffe6b0,1.0); fill.position.set(-2,-1,3); scene.add(fill);
+scene.add(new THREE.AmbientLight(0xffffff,0.28));
+const pivot=new THREE.Group(); scene.add(pivot);
+const loader=new GLTFLoader();
+loader.load(window.GLB_URI,(gltf)=>{
+  const m=gltf.scene;
+  let box=new THREE.Box3().setFromObject(m);
+  const size=box.getSize(new THREE.Vector3()), center=box.getCenter(new THREE.Vector3());
+  m.position.sub(center); const maxDim=Math.max(size.x,size.y,size.z);
+  m.scale.setScalar(2.0/maxDim); pivot.add(m);
+  box=new THREE.Box3().setFromObject(pivot);
+  window.__r=box.getBoundingSphere(new THREE.Sphere()).radius;
+  setCam(24,1.30,-0.36);
+  window.__ready=true;
+},undefined,(e)=>{window.__error=String(e);});
+function setCam(elevDeg,fitMul,targetYr){
+  const r=window.__r,fov=camera.fov*Math.PI/180;
+  const dist=(r/Math.sin(fov/2))*fitMul, el=elevDeg*Math.PI/180;
+  camera.position.set(0,Math.sin(el)*dist,Math.cos(el)*dist);
+  camera.lookAt(0,targetYr*r,0);
+}
+window.renderAt=function(angle){ pivot.rotation.y=angle; renderer.render(scene,camera); };
+</script>
+</body></html>

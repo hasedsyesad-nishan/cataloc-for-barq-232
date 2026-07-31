@@ -51,33 +51,49 @@ PBR materials.
 
 ## ② جهاز السخان — BARQ Water-Heater Controller
 
+المراعاة (من الصور الحقيقية): 3 أطراف توصيل بيضاء ببراغي نحاسية أعلى الجهاز ·
+واجهة ذهبية مصقولة داخل إطار ألمنيوم فضّي · شاشة رقمية دائرية V/A أسفل ·
+مسند تثبيت فضّي جانبي · الوجه الخلفي أسود فيه زر دائري أبيض + 4 فتحات براغي ·
+مثبّت على مشتّت حراري ألمنيوم مضلّع كبير.
+
 ```
 Photorealistic studio product render of a "BARQ" smart water-heater power
-controller. A vertical rectangular device with a brushed silver aluminium
-frame/body and rounded edges, taller and more robust than a phone (high-current
-appliance controller).
+controller, mounted on top of a large finned aluminium heatsink (like a
+solid-state-relay heatsink). The controller is a vertical rectangular module
+with a brushed silver aluminium frame and a champagne-GOLD brushed metal front
+panel; robust high-current industrial look.
 
-FRONT FACE: a brushed champagne-GOLD metallic panel set inside the silver
-aluminium frame, bearing:
-- the "BARQ" logo at the top (the blue-and-silver lightning "B"),
-- the wordmark "BARQ" with Arabic "برق" beneath it,
-- a small round digital display near the bottom showing "220V / 15A" in cyan
-  digits on black.
+FRONT PANEL (champagne-gold brushed metal, inside a silver aluminium frame):
+- Top: the "BARQ" wordmark — a blue-and-silver lightning "B" with "ARQ", and
+  the Arabic word "برق" beside it.
+- Center: a large embossed gold/bronze "B" fused with a lightning bolt emblem.
+- Bottom: a round dual digital display (two rows of 7-segment digits) showing
+  voltage and current, e.g. "220V" over "15A", cyan/white digits on black.
 
-TOP EDGE: three white ceramic/plastic screw TERMINAL BLOCKS (heavy-duty wire
-terminals) lined up for high-current connections.
+TOP EDGE: three WHITE ceramic screw-terminal blocks in a row, each with
+brass/gold screw terminals for heavy-gauge wiring; thick red and black
+insulated wires loop out from the terminals.
 
-BODY: solid, industrial, heat-duty look; brushed metal side panels; the back/
-fourth face is plain.
+LEFT SIDE: an L-shaped silver aluminium mounting bracket/tab.
 
-MATERIALS & DETAIL: brushed aluminium with fine grain, champagne-gold anodized
-front plate, realistic metal reflections, crisp printed branding.
+BACK FACE: matte black, plain, with four corner screw holes and a single round
+light-gray PUSH BUTTON in the lower-center.
+
+BASE: the module is bolted onto a large black-and-silver finned aluminium
+heatsink (horizontal cooling fins) for high-current heat dissipation.
+
+MATERIALS & DETAIL: brushed anodized aluminium (silver frame + gold panel),
+white ceramic terminals, brass screws, matte black back, machined aluminium
+heatsink, realistic metal reflections, crisp printed branding.
 
 RENDER: photorealistic, three-quarter hero angle, seamless neutral studio
 background, soft three-point lighting, gentle reflections and soft contact
 shadow, ultra sharp, high detail, 8k commercial product photography, PBR
 materials.
 ```
+
+> ملاحظة: يمكنك طلب نسختين — واحدة مع المشتّت الحراري (المجموعة الكاملة)،
+> وأخرى للوحدة وحدها بدون المشتّت.
 
 ---
 
